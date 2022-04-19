@@ -35,4 +35,29 @@
             <img src="images/montrealhdimage.jpg" alt="" width="100%" height="auto">
         </div>
     </div><br><br>
-    
+    <div id="phase2">
+
+        <div class="about">
+            <h4>About</h4>
+            <span class="divider"></span>
+        </div><br>
+        <div class="tab">
+            <button class="tablinks" id="mission" onclick="mission()" >Mission</button>
+            <button class="tablinks" id="vision" onclick="vision()">Vision</button>
+            <button class="tablinks" id="values" onclick="values()">Values</button>
+          </div>
+          <p class="tabcontent" id="X"></p>
+    </div><br><br>
+    <script>
+        function mission(){
+            document.getElementById('X').innerHTML = "Faire de Montréal un endroit sûr pour les touristes"
+        }
+        function vision(){
+            document.getElementById('X').innerHTML = "Faire de Montréal une des meilleures destinations touristiques au monde."
+        }
+        function values(){
+            document.getElementById('X').innerHTML = "Notre organisation vise à aider tous les touristes de différentes parties du monde."
+        }
+    </script>
+
+</body>

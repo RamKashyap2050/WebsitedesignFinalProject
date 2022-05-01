@@ -48,6 +48,29 @@
           </div>
           <p class="tabcontent" id="X"></p>
     </div><br><br>
+    <div id="phase3">
+        <div id="phase3.1">
+             <div class="services">
+                 <h4>Wiki Montréal</h4>
+                 <span class="divider"></span>
+             </div><br>
+             <div class="phasebtns">
+                 <p id="content"></p>
+                 <div class="btns">
+                     <button class="x" onclick="variable = setTimeout(a,200)"></button>&nbsp;&nbsp;
+                     <button class="x" onclick="variable = setTimeout(b,200)"></button>&nbsp;&nbsp;
+                     <button class="x" onclick="variable = setTimeout(c,200)"></button>&nbsp;&nbsp;
+                 </div>
+             
+                         
+                </div>
+             <br><br><br>
+             <div class="about">
+                 <h4>Destination Touristique</h4>
+                 <span class="divider"></span>
+             </div><br><br>
+        </div>
+    </div>
     <script>
         function mission(){
             document.getElementById('X').innerHTML = "Faire de Montréal un endroit sûr pour les touristes"
@@ -57,6 +80,16 @@
         }
         function values(){
             document.getElementById('X').innerHTML = "Notre organisation vise à aider tous les touristes de différentes parties du monde."
+        }
+        function a(){
+        
+            document.getElementById('content').innerHTML = 'Montreal is North America’s number one host city for international events. Montreal is home to the famous Cirque de Soleil and hosted the Summer Olympics in 1976. Montreal also played host to Expo 67, considered to be the most successful worlds fair in the 20th Century.';
+        }
+        function b(){
+            document.getElementById('content').innerHTML = `Montreal is build around Mont Royal, from where the city received its name. Mont Royal Park, located on the mountain, was designed by Frederick Law Olmsted, the same person who designed New York City's Central Park. No building in Montreal can be taller than the famous Cross found on Mont Royal!`
+        }
+        function c(){
+            document.getElementById('content').innerHTML = `Montreal has an Underground City, which is a series of interconnected tunnels beneath the city that run for over 32km. The tunnels connect shopping malls, over 2000 stores, 7 metro stations,universities, banks, offices, museums, restaurants and so on.`;
         }
     </script>
 

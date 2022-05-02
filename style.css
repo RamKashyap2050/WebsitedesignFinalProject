@@ -175,5 +175,18 @@ a{
   grid-column-gap: 20px;
 }
 
-
+@media only screen and (max-width: 1000px){
+  .centertext{
+    font-size: 15px;
+  }
+  
+  .phase32{
+    display: list-item;
+    text-align: center;
+    margin: auto;
+  }
+  .menu{
+    display: none;
+  }
+}
 

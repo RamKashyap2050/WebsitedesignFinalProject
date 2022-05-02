@@ -17,10 +17,11 @@
                    <img src="images/flag.png" alt="" height="20px" width="20px">  Tourisme montréal
                 </div>
                 <nav>
-                    <ul id="menu">
+                    <ul class="menu" id="menu">
                         <li><a href="#phase2">Environ</a></li>
                         <li><a href="#phase3">Wiki Montréal</a></li>
                         <li><a href="#phase5">Contactez-Nous</a></li>
+                        <li><img src="images/cart.png" alt="" style="background-color:aliceblue; display: none;" height="25px" width="25px"></li>
                     </ul>
                 </nav>
              
@@ -46,7 +47,7 @@
             <button class="tablinks" id="vision" onclick="vision()">Vision</button>
             <button class="tablinks" id="values" onclick="values()">Values</button>
           </div>
-          <p class="tabcontent" id="X"></p>
+          <p class="tabcontent" id="tabcontent"></p>
     </div><br><br>
     <div id="phase3">
         <div id="phase3.1">
@@ -98,15 +99,33 @@
         </div>
     
     </div><br><br>
+    <div class="phase5" id="phase5">
+        <div class="about">
+            <h4>Contactez-Nous</h4>
+            <span class="divider"></span>
+        </div><br>
+        <form action="https://postmail.invotes.com/send"
+    method="post" id="email_form" style="text-align: center; margin: auto; width: 600px;">
+
+    <input type="text" name="Subject" placeholder="Subject" size="50px" style="padding: 10px;"><br><br>
+    <input type="text" name="Message" placeholder="Enter Your Name" size="50px" style="padding: 10px;"><br><br>
+    <input type="text" name="Message" placeholder="Enter Your Message" size="50px" style="padding: 10px;"><br><br>
+    <input name="text" placeholder="Enter Your Mail(Eg:- example@email.com)" size="50px" style="padding: 10px;"></input><br><br>
+    <input type="hidden" name="access_token" value="sowcqhg0p789yonmkkjaiwvd" /> 
+    <input type="hidden" name="success_url" value=".?message=Email+Successfully+Sent%21&isError=0" />
+    <input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" />
+    <input id="submit_form" type="submit" value="Send" style="padding: 10px; width: 386px; size: 50px;">
+    
+    </div>
     <script>
         function mission(){
-            document.getElementById('X').innerHTML = "Faire de Montréal un endroit sûr pour les touristes"
+            document.getElementById('tabcontent').innerHTML = "Faire de Montréal un endroit sûr pour les touristes"
         }
         function vision(){
-            document.getElementById('X').innerHTML = "Faire de Montréal une des meilleures destinations touristiques au monde."
+            document.getElementById('tabcontent').innerHTML = "Faire de Montréal une des meilleures destinations touristiques au monde."
         }
         function values(){
-            document.getElementById('X').innerHTML = "Notre organisation vise à aider tous les touristes de différentes parties du monde."
+            document.getElementById('tabcontent').innerHTML = "Notre organisation vise à aider tous les touristes de différentes parties du monde."
         }
         function a(){
         

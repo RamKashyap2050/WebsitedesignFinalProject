@@ -174,8 +174,84 @@ a{
   width: 400px;
   grid-column-gap: 20px;
 }
+/*Form styling*/
+.form{
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+/*Submit button styling */
+.submitt{
+  background-color: #D3D3D3	;
+  color: black;
+  padding: 12px 20px;
 
-@media only screen and (max-width: 1000px){
+
+  width: 400px;
+  font-family: 'poppins',sans-serif;
+  font-size: large;
+}/*socialmedia buttons styling*/
+.fa {
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 70%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: black;
+  color: white;
+}
+/* footer styling*/
+footer{
+  background-color: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  grid-column-gap: 20px;
+  padding: 20px;
+  margin: auto;
+  text-align: center;
+}
+
+.fa-twitter {
+  background: black;
+  color: white;
+}
+
+.fa-linkedin {
+  background: black;
+  color: white;
+}
+.socialmedia{
+  display: inline-block;
+}
+.container3{
+  color: white;
+  float: right 10px;
+}
+input[type=text] {
+  padding: 10px;
+}
+/*Underline for text*/
+.divider1{
+  width: 400px;
+  height: 2px;
+  background-color: grey;
+  display: inline-block;
+  border-radius: 30%;
+}
+/*copyrights in footer*/
+.copyrights{
+  text-align: center;
+  margin: auto;
+}
+@media only screen and (max-width:1000px){
   .centertext{
     font-size: 15px;
   }

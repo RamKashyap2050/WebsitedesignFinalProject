@@ -151,7 +151,29 @@ a{
   
   background-color: grey;
 }
-
+.text{
+  position: relative;
+  top: 30px;
+  right: 120px;
+}
+.saintjos{
+  position: relative;
+  text-align: center;
+  color: beige;
+  font-family: 'poppins', sans-serif;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+.saintjos:hover{
+  transform: translateY(-10px);
+}
+/*Phase 3.2 styling three images arranging in line order*/
+.phase32{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 400px;
+  grid-column-gap: 20px;
+}
 
 
 

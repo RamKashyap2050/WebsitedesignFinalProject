@@ -8,6 +8,7 @@
     <link rel="icon" type="image/png" href="images/flag.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="phase1">
@@ -21,10 +22,13 @@
                         <li><a href="#phase2">Environ</a></li>
                         <li><a href="#phase3">Wiki Montréal</a></li>
                         <li><a href="#phase5">Contactez-Nous</a></li>
-                        <li><img src="images/cart.png" alt="" style="background-color:aliceblue; display: none;" height="25px" width="25px"></li>
+
                     </ul>
                 </nav>
-             
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars" ></i>
+                  </a>
+                
             </div>
            
         </div>
@@ -109,15 +113,15 @@
 
     <input type="text" name="Subject" placeholder="Subject" size="50px" style="padding: 10px;"><br><br>
     <input type="text" name="Message" placeholder="Enter Your Name" size="50px" style="padding: 10px;"><br><br>
-    <input type="text" name="Message" placeholder="Enter Your Message" size="50px" style="padding: 10px;"><br><br>
-    <input name="text" placeholder="Enter Your Mail(Eg:- example@email.com)" size="50px" style="padding: 10px;"></input><br><br>
+    <input type="text" name="Message" placeholder="Enter Your Mail(Eg:- example@email.com)" size="50px" style="padding: 10px;"><br><br>
+    <input name="text" placeholder="Enter Your Message" size="50px" style="padding: 10px;"></input><br><br>
     <input type="hidden" name="access_token" value="sowcqhg0p789yonmkkjaiwvd" /> 
     <input type="hidden" name="success_url" value=".?message=Email+Successfully+Sent%21&isError=0" />
     <input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" />
     <input id="submit_form" type="submit" value="Send" style="padding: 10px; width: 386px; size: 50px;">
     
     </div><br><br>
-    <div class="phase6">
+    <div class="phase6" id="phase6">
     
         <footer>
             <div class="container1">
@@ -136,13 +140,14 @@
             <div class="container3">
                 <h4>Address</h4>
                 <h5>1255, Rue Peel,<br> centre d'information touristique de montréal, <br> Phone Number:- 5148752015</h5>
-            </div><br><br><br>
+            </div>
             <div class="copyrights">
                 <span class="divider1"></span><br><br>
                 <h4 style="color: white;">&copy; 2005-2022 Montrealtourism.com All rights Reserved</h4>
             </div>
         </footer>
     </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <script>
         function mission(){
             document.getElementById('tabcontent').innerHTML = "Faire de Montréal un endroit sûr pour les touristes"
@@ -163,6 +168,16 @@
         function c(){
             document.getElementById('content').innerHTML = `Montreal has an Underground City, which is a series of interconnected tunnels beneath the city that run for over 32km. The tunnels connect shopping malls, over 2000 stores, 7 metro stations,universities, banks, offices, museums, restaurants and so on.`;
         }
+        function myFunction() {
+            var x = document.getElementById("menu");
+            if(jQuery(window).width()<1000){
+                if (x.style.display === "block") {
+                x.style.display = "none";
+                } else {
+                x.style.display = "block";
+                }
+            }
+}
     </script>
 
 </body>
